@@ -1,16 +1,70 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Campus Club Finder
 
-Currently, two official plugins are available:
+A responsive single-page web application that helps university students discover, explore, and join student clubs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- Vite
+- React
+- React Router v7
+- Tailwind CSS v4
+- localStorage
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Browse 5 predefined student clubs.
+- View club details and upcoming events.
+- Join clubs.
+- Persist club memberships using localStorage.
+- Sort clubs alphabetically (A-Z and Z-A).
+- Toggle between Grid View and List View.
+- Responsive layout for mobile, tablet, and desktop.
+- Navigation with active route highlighting.
+- 404 Not Found page.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+Clone the repository:
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+Navigate to the project directory:
+
+```bash
+cd campus-club-finder
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+## Routes
+
+| Route | Page |
+|---|---|
+| `/` | Home |
+| `/clubs` | Club List |
+| `/clubs/:clubId` | Club Detail |
+| `/about` | About |
+| `*` | 404 Not Found |
+
+## Storage
+
+The application uses browser localStorage to store joined club IDs.
+
+No backend or authentication is required.
+
+## Development
+
+Built as a single-page application using React functional components and Hooks.
